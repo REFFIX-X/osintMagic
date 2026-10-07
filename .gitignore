@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Local config / installed skills (do not commit)
+.claude/
+.env
+*.env
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db

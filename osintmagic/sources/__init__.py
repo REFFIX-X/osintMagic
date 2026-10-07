@@ -1,0 +1,20 @@
+"""Importing this package triggers source registration in ``osintmagic.registry``."""
+from . import (  # noqa: F401
+    brand,
+    darkweb,
+    domain,
+    email,
+    github_source,
+    hibp,
+    instagram,
+    ip,
+    leaks,
+    numverify,
+    paste,
+    person,
+    phone,
+    shodan,
+    tor,
+    username,
+    virustotal,
+)

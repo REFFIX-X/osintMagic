@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Twitter / X",
+    "domain": "twitter.com",
+    "detect": "regex",
+    "method": "GET",
+    "url": "https://api.twitter.com/i/users/email_available.json",
+    "params": {"email": "{}"},
+    "exists_re": "\"taken\":\\s*true",
+    "not_exists_re": "\"taken\":\\s*false"
+  },
+  {
+    "name": "Spotify",
+    "domain": "spotify.com",
+    "detect": "regex",
+    "method": "GET",
+    "url": "https://spclient.wg.spotify.com/signup/public/v1/account",
+    "params": {"validate": "1", "email": "{}"},
+    "exists_re": "\"status\":\\s*20\\b",
+    "not_exists_re": "\"status\":\\s*1\\b"
+  },
+  {
+    "name": "Duolingo",
+    "domain": "duolingo.com",
+    "detect": "regex",
+    "method": "GET",
+    "url": "https://www.duolingo.com/2017-06-30/users",
+    "params": {"email": "{}"},
+    "exists_re": "\"users\":\\s*\\[\\s*\\{",
+    "not_exists_re": "\"users\":\\s*\\[\\s*\\]"
+  },
+  {
+    "name": "Google (Gmail)",
+    "domain": "gmail.com",
+    "detect": "cookie",
+    "method": "GET",
+    "url": "https://mail.google.com/mail/gxlu",
+    "params": {"email": "{}"},
+    "cookie_name": "GX"
+  }
+]
