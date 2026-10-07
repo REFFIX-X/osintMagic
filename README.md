@@ -7,7 +7,7 @@ Streamlit web UI themed in Monokai Pro.
 No API keys required out of the box. Optional keys (HIBP, Shodan, VirusTotal,
 GitHub, numverify) unlock deeper sources when you add them.
 
-![osintMagic target hub](docs/screenshot.jpg)
+![osintMagic target hub](docs/screenshot.png)
 
 ---
 
