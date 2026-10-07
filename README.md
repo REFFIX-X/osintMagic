@@ -1,3 +1,5 @@
+[![osintMagic — keyless OSINT suite](assets/banner.png)](https://github.com/REFFIX-X/osintMagic)
+
 # osintMagic
 
 **A keyless OSINT suite** — gather public information about a **person, email,
@@ -6,8 +8,6 @@ Streamlit web UI themed in Monokai Pro.
 
 No API keys required out of the box. Optional keys (HIBP, Shodan, VirusTotal,
 GitHub, numverify) unlock deeper sources when you add them.
-
-![osintMagic target hub](docs/screenshot.png)
 
 ---
 
@@ -65,6 +65,15 @@ python -m pytest -q
 | **IP** | Geolocation/ISP/ASN, RDAP network info, reverse DNS. |
 | **Leaks** | On-demand paste-site + leak-mention search with credential-pattern scanning. |
 | **Dark web** | Ahmia search + optional `.onion` crawl via a local Tor daemon. |
+
+---
+
+## Screenshot
+
+A live `torvalds` scan — the target hub, per-source live log, and the connected
+entity graph.
+
+![osintMagic — target hub with live scan log and entity graph](docs/screenshot.png)
 
 ---
 
